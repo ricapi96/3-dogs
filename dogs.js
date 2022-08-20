@@ -11,7 +11,7 @@ tailButton.addEventListener('click', happyTails);
 function happyTails() {
     console.log('Happy Tails!');
     const img = document.createElement('img');
-    img.src = this.id + 'milla-maybe.jpg';
+    img.src = this.id + 'sisters.jpg';
     happy.innerHTML = "";
     happy.append(img);
 
