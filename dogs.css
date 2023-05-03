@@ -72,8 +72,9 @@ section h2 {
 }
 
 #fun-facts {
-  display: flex;
+  display: block;
   justify-content: center;
+  margin-top: 10px;
 }
 
 #pics {
@@ -86,3 +87,12 @@ section h2 {
 #tribute {
   text-align: center;
 }
+
+section {
+    padding: 50px;
+}
+
+#fun-facts ul {
+    display: block;
+    margin-top: 10px;
+  }
