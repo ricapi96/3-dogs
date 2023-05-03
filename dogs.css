@@ -75,6 +75,7 @@ section h2 {
   display: block;
   justify-content: center;
   margin-top: 10px;
+  margin: auto;
 }
 
 #pics {
