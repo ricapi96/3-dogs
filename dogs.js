@@ -16,3 +16,16 @@ function happyTails() {
     happy.append(img);
 
 }
+
+// Get the navigation menu element
+const navMenu = document.querySelector('nav ul');
+
+// Toggle the responsive class on click of the hamburger icon
+document.querySelector('.hamburger').addEventListener('click', () => {
+  navMenu.classList.toggle('responsive');
+});
+
+// Remove the responsive class when a menu item is clicked
+navMenu.addEventListener('click', () => {
+  navMenu.classList.remove('responsive');
+});
