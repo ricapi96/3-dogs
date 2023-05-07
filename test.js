@@ -1,11 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // var navbarMenu = document.getElementById("navbar-menu");
-    var navbarToggler = document.getElementById("navbar-toggler");
-    
-    navbarToggler.addEventListener("click", function() {
-      navbarToggler.classList.toggle("collapsed");
-    });
-  });
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
   
 
   

@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./test.css">
     <title>Test Website</title>
 </head>
 <body>
-    <!-- Navbar/hamburger menu -->
-    <nav class="navbar">
-        <div class="navbar-brand">
-          <span class="logo">Your Logo</span>
-          <button class="navbar-toggler" id="navbar-toggler">
-            <span class="menu-icon"></span>
-          </button>
-        </div>
-        <ul class="navbar-menu" id="navbar-menu">
-          <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#services">Services</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      
+   <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
  
     
 
