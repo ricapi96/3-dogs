@@ -83,11 +83,8 @@ section h2 {
   text-decoration: underline;
 }
 
-#fun-facts {
-  display: block;
-  justify-content: center;
+#fun-facts ul {
   margin-top: 10px;
-  margin: auto;
 }
 
 #pics {
@@ -102,20 +99,13 @@ section h2 {
 }
 
 section {
-    padding: 50px;
+  padding: 50px;
 }
 
-#fun-facts ul {
-    display: block;
-    margin-top: 10px;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  
-
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}

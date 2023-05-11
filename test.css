@@ -24,7 +24,6 @@ body {
   text-decoration: underline;
 }
 
-
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -58,7 +57,7 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dd6a8d;
   color: black;
 }
 
@@ -90,13 +89,6 @@ section h2 {
   text-decoration: underline;
 }
 
-#fun-facts {
-  display: block;
-  justify-content: center;
-  margin-top: 10px;
-  margin: auto;
-}
-
 #pics {
   display: flex;
   justify-content: center;
@@ -109,26 +101,37 @@ section h2 {
 }
 
 section {
-    padding: 50px;
+  padding: 50px;
 }
 
-#fun-facts ul {
-    display: block;
-    margin-top: 10px;
-  }
+.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
 
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 2px auto;
-    background-color: #fce138;
-  }
+.custom-bullets li {
+  margin-bottom: 10px;
+}
+
+.custom-bullets .bullet {
+  display: inline-block;
+  width: 12px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 2px auto;
+  background-color: #fce138;
+}
