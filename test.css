@@ -57,7 +57,7 @@ body {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #dd6a8d;
+  background-color: #9c40f7;
   color: black;
 }
 
@@ -75,6 +75,8 @@ img {
   align-items: center;
   height: 280px;
   width: 250px;
+  border-radius: 50px;
+  border: 4px solid rgb(203, 172, 118);
 }
 
 .pups {
@@ -126,6 +128,15 @@ nav ul {
   padding: 0;
   display: flex;
   flex-direction: row;
+}
+
+button {
+  border-radius: 80%;
+  background-color: #fce138;
+  height: 40px;
+  width: 70px;
+  border: 4px solid #39a6b2;
+  cursor: pointer;
 }
 
 footer {
