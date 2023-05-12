@@ -5,7 +5,17 @@
 }
 
 body {
-  background-color: lightblue;
+  background: #30e8bf; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff8235,
+    #30e8bf
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff8235,
+    #30e8bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
@@ -22,6 +32,17 @@ body {
   flex-direction: column;
   text-align: center;
   text-decoration: underline;
+  background: #be93c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7bc6cc,
+    #be93c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7bc6cc,
+    #be93c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Style the navigation menu */
@@ -96,10 +117,49 @@ section h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: aliceblue;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ca1af,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ca1af,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #tribute {
   text-align: center;
+  color: aliceblue;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#fun-facts {
+  color: black;
+  background: #eecda3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef629f,
+    #eecda3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef629f,
+    #eecda3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 section {
