@@ -40,3 +40,21 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+// Get the button element
+var backButton = document.getElementById("back-to-top");
+
+// Show the button when user scrolls down 20px from the top
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backButton.style.display = "block";
+  } else {
+    backButton.style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+backButton.addEventListener("click", function() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; 
+});
