@@ -19,7 +19,7 @@ tailButton.addEventListener("click", happyTails);
   happy.append(img);
 
   const removeButton = document.createElement('button');
-  removeButton.innerHTML = 'Clear';
+  removeButton.innerHTML = 'Good girls!';
   removeButton.setAttribute('id', 'remove-image');
   happy.append(removeButton);
 

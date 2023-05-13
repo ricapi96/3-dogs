@@ -131,6 +131,18 @@ section h2 {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 #tribute {
   text-align: center;
   color: aliceblue;
@@ -145,6 +157,12 @@ section h2 {
     #243b55,
     #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#tribute img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 #fun-facts {
@@ -224,4 +242,11 @@ footer {
   align-items: center;
   padding: 2px auto;
   background-color: #fce138;
+}
+
+@media screen and (max-width: 600px) {
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
