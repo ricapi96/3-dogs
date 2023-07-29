@@ -135,6 +135,8 @@ section h2 {
   font-size: large;
   align-items: center;
   text-align: center;
+  background-color: #9c40f7;
+  color: rgb(235, 235, 34);
 }
 
 .image-section {
