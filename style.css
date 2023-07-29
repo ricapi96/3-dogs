@@ -131,6 +131,12 @@ section h2 {
   ); 
 }
 
+#birthday {
+  font-size: large;
+  align-items: center;
+  text-align: center;
+}
+
 .image-section {
   display: flex;
   flex-wrap: wrap;
