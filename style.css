@@ -131,12 +131,33 @@ section h2 {
   ); 
 }
 
+/* Birthday! */
 #birthday {
   font-size: large;
   align-items: center;
   text-align: center;
   background-color: #9c40f7;
   color: rgb(235, 235, 34);
+}
+
+#message-form {
+  margin-top: 20px;
+}
+
+#message-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#message-form textarea {
+  width: 100%;
+}
+
+.personalized-message {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
 }
 
 .image-section {
