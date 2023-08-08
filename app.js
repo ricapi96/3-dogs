@@ -58,3 +58,31 @@ backButton.addEventListener("click", function() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; 
 });
+
+// Birthday form
+document.addEventListener('DOMContentLoaded', function() {
+  var messageForm = document.getElementById('message-form');
+  var messageDisplay = document.getElementById('message-display');
+
+  messageForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var message = document.getElementById('message').value;
+
+    // Create message element
+    var messageElement = document.createElement('div');
+    messageElement.className = 'personalized-message';
+    messageElement.innerHTML = `<strong>${name}:</strong> ${message}`;
+
+    messageDisplay.appendChild(messageElement);
+
+    // Clear the form
+    messageForm.reset();
+  });
+});
+
+// close popup
+document.getElementById('close-popup').addEventListener('click', function() {
+  document.getElementById('top-message').style.display = 'none';
+});
