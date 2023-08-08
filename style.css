@@ -132,6 +132,48 @@ section h2 {
 }
 
 /* Birthday! */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.popup a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.popup a:hover {
+  background-color: #2980b9;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
 #birthday {
   font-size: large;
   align-items: center;

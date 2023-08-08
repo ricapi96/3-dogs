@@ -81,3 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
     messageForm.reset();
   });
 });
+
+// close popup
+document.getElementById('close-popup').addEventListener('click', function() {
+  document.getElementById('top-message').style.display = 'none';
+});
