@@ -67,20 +67,73 @@ document.addEventListener('DOMContentLoaded', function() {
   messageForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var name = document.getElementById('name').value;
-    var message = document.getElementById('message').value;
+    // var name = document.getElementById('name').value;
+    // var message = document.getElementById('message').value;
 
     // Create message element
-    var messageElement = document.createElement('div');
-    messageElement.className = 'personalized-message';
-    messageElement.innerHTML = `<strong>${name}:</strong> ${message}`;
+    // var messageElement = document.createElement('div');
+    // messageElement.className = 'message';
+    // messageElement.innerHTML = `<strong>${name}:</strong> ${message}`;
 
-    messageDisplay.appendChild(messageElement);
+    // messageDisplay.appendChild(messageElement);
 
     // Clear the form
     messageForm.reset();
   });
 });
+
+// Get references to form elements
+const messageForm = document.getElementById('message-form');
+const nameInput = document.getElementById('name');
+const messageInput = document.getElementById('message');
+
+// Load messages from localStorage
+let messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+// Event listener for form submission
+messageForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Get name and message from inputs
+  const name = nameInput.value;
+  const message = messageInput.value;
+
+  // Add message to messages array
+  messages.push({ name, message });
+
+  // Save messages to localStorage
+  localStorage.setItem('messages', JSON.stringify(messages));
+
+  // Clear inputs
+  nameInput.value = '';
+  messageInput.value = '';
+
+  // Refresh the displayed messages
+  displayMessages();
+});
+
+function displayMessages() {
+  // Get a reference to the message display div
+  var messageDisplay = document.getElementById('message-display');
+
+  // Clear the existing messages before displaying the new ones
+  messageDisplay.innerHTML = '';
+
+  // Get the stored messages from local storage
+  let messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+  // Loop through the messages and create message elements
+  messages.forEach(function (messageObj) {
+    var messageElement = document.createElement('div');
+    messageElement.className = 'message';
+    messageElement.innerHTML = `<strong>${messageObj.name}:</strong> ${messageObj.message}`;
+    messageDisplay.appendChild(messageElement);
+  });
+}
+
+// Call displayMessages function to initially display messages
+displayMessages();
+
 
 // close popup
 document.getElementById('close-popup').addEventListener('click', function() {
