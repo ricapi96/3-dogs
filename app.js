@@ -103,7 +103,7 @@ messageForm.addEventListener('submit', function(event) {
 
   // Save messages to localStorage
   localStorage.setItem('messages', JSON.stringify(messages));
-
+  console.log(messages);
   // Clear inputs
   nameInput.value = '';
   messageInput.value = '';
