@@ -2,9 +2,7 @@
 
 ## Milla, Joe, and Maybe
 
-### Maybe was buried Aug. 02, 2022
+### Maybe was buried on Aug. 02, 2022
 - I made this in her memory.
 
-`
- For my sister.
-`
+#### For my sister.
