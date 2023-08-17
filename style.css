@@ -98,6 +98,7 @@ img {
   width: 250px;
   border-radius: 50px;
   border: 4px solid rgb(203, 172, 118);
+  object-fit: cover;
 }
 
 .pups {
