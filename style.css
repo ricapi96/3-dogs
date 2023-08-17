@@ -91,13 +91,14 @@ body {
 
 img {
   margin-top: 20px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   height: 280px;
   width: 250px;
   border-radius: 50px;
   border: 4px solid rgb(203, 172, 118);
+  object-fit: cover;
 }
 
 .pups {
@@ -212,17 +213,6 @@ section h2 {
   width: 200px;
   height: 200px;
   object-fit: cover;
-}
-
-.bday-pics {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 280px;
-  width: 350px;
-  border-radius: 50px;
-  border: 4px solid rgb(203, 172, 118);
 }
 
 #tribute {
