@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #30e8bf; 
   background: -webkit-linear-gradient(
@@ -363,6 +367,7 @@ footer {
   align-items: center;
   padding: 2px auto;
   background-color: #fce138;
+  color: #141715;
 }
 
 @media screen and (max-width: 600px) {
