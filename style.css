@@ -361,6 +361,31 @@ button {
   }
 }
 
+/* Video section */
+.video-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  flex-direction: column;  
+}
+
+.video-title {
+  text-decoration: underline;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.video-caption {
+  background-color: aliceblue;
+  margin-top: 10px;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 footer {
   display: flex;
   justify-content: right;
